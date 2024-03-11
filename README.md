@@ -2,6 +2,8 @@
 
 Steps to add App Insights telemetry to asp.net core application from Visual Studio
 **Set Up**
+
+
     1. Open your project in Visual Studio.
     
     2. Go to Project > Add Application Insights Telemetry.
@@ -22,6 +24,8 @@ Steps to add App Insights telemetry to asp.net core application from Visual Stud
     **builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);**
 
 **Run & View Metrics**
+
+
     Now Run the application and make a few requests.
     
     To view the data, go to the Application Insights on Azure Portal and you should be able to see the data flowing. You can view in the "Performance" tab or "Live Metrics"
@@ -29,6 +33,8 @@ Steps to add App Insights telemetry to asp.net core application from Visual Stud
     <img width="755" alt="image" src="https://github.com/Kruthiv/AppInsightInstrumentation/assets/109948637/09cbb911-4b21-4a07-94cf-874b89c9a986">
     
 **Logging**
+
+
     In order to capture logs, use the ILogger capabilty. 
     In this example, we have added the line below in SampleAppInstrumentation.cs where WeatherForecastUJ is the user journey name to capture User Journey details
     
