@@ -1,5 +1,7 @@
 ﻿# AppInsightInstrumentation
 
+Steps to add App Insights telemetry to asp.net core application from Visual Studio
+
 1. Open your project in Visual Studio.
 
 2. Go to Project > Add Application Insights Telemetry.
