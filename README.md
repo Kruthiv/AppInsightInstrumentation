@@ -14,9 +14,14 @@ Steps to add App Insights telemetry to asp.net core application from Visual Stud
 
 6. After you add Application Insights to your project, check to confirm that you're using the latest stable release of the SDK. Go to Project > Manage NuGet Packages > Microsoft.ApplicationInsights.AspNetCore. If you need to, select Update.
 
+<img width="589" alt="image" src="https://github.com/Kruthiv/AppInsightInstrumentation/assets/109948637/982e9ee6-4fa2-4575-99f4-6eb7e40827bc">
+
+
 This will add the line below in Program.cs file 
 
 **builder.Services.AddApplicationInsightsTelemetry(builder.Configuration["APPLICATIONINSIGHTS_CONNECTION_STRING"]);**
+
+Now Run the application and make a few requests.
 
 To view the data, go to the Application Insights on Azure Portal and you should be able to see the data flowing. You can view in the "Performance" tab or "Live Metrics"
 
